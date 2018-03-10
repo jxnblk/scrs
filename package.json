@@ -1,0 +1,41 @@
+{
+  "name": "scrs",
+  "version": "1.0.0",
+  "description": "styled-components static renderer",
+  "main": "dist/index.js",
+  "bin": {
+    "scrs": "./bin/cli.js"
+  },
+  "scripts": {
+    "prepublish": "babel src -d dist",
+    "start": "./bin/cli.js examples/Hello.js > examples/hello.html",
+    "test": "nyc ava"
+  },
+  "keywords": [],
+  "author": "Brent Jackson",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "meow": "^4.0.0",
+    "nyc": "^11.4.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-test-renderer": "^16.2.0",
+    "styled-components": "^3.2.1"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "dependencies": {
+    "update-notifier": "^2.3.0"
+  }
+}
