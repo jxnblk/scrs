@@ -14,18 +14,24 @@
   "keywords": [],
   "author": "Brent Jackson",
   "license": "MIT",
-  "devDependencies": {
-    "ava": "^0.25.0",
-    "babel-cli": "^6.26.0",
-    "babel-plugin-add-module-exports": "^0.2.1",
+  "dependencies": {
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
     "meow": "^4.0.0",
+    "react-dom": "^16.2.0",
+    "update-notifier": "^2.3.0"
+  },
+  "peerDependencies": {
+    "styled-components": ">=2.0.0 || >=3.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
     "nyc": "^11.4.1",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0",
     "react-test-renderer": "^16.2.0",
     "styled-components": "^3.2.1"
   },
@@ -35,7 +41,15 @@
     ],
     "babel": "inherit"
   },
-  "dependencies": {
-    "update-notifier": "^2.3.0"
-  }
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jxnblk/scrs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jxnblk/scrs/issues"
+  },
+  "homepage": "https://github.com/jxnblk/scrs#readme"
 }
