@@ -1,5 +1,7 @@
 
-# scrs (styled-components static renderer)
+# scrs
+
+styled-components static renderer
 
 ```sh
 npm i -g scrs
