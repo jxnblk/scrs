@@ -4,11 +4,12 @@
   "description": "styled-components static renderer",
   "main": "dist/index.js",
   "bin": {
-    "scrs": "./bin/cli.js"
+    "scrs": "./cli.js"
   },
   "scripts": {
-    "prepublish": "babel src -d dist",
-    "start": "./bin/cli.js examples/Hello.js > examples/hello.html",
+    "prepare": "babel src -d dist",
+    "start": "./cli.js examples/Hello.js > examples/hello.html",
+    "svg": "./cli.js examples/Icon.js --svg > examples/icon.svg",
     "test": "nyc ava"
   },
   "keywords": [],
@@ -19,7 +20,7 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-register": "^6.26.0",
-    "meow": "^4.0.0",
+    "meow": "^5.0.0",
     "react-dom": "^16.2.0",
     "update-notifier": "^2.3.0"
   },
