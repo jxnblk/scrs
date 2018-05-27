@@ -1,6 +1,6 @@
 {
   "name": "scrs",
-  "version": "1.1.0-0",
+  "version": "1.1.0-1",
   "description": "styled-components static renderer",
   "main": "dist/index.js",
   "bin": {
