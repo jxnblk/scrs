@@ -15,7 +15,7 @@ const render = (Comp, opts = {}) => {
   if (opts.svg) {
     styles.forEach(style => {
       const css = style.props.dangerouslySetInnerHTML.__html
-      style.props.dangerouslySetInnerHTML.__html = `/*  <![CDATA[ */ ${css} /* ]]> */`
+      style.props.dangerouslySetInnerHTML.__html = `/* <![CDATA[ */ ${css} /* ]]> */`
     })
   }
   const html = renderToStaticMarkup(

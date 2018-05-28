@@ -16,6 +16,10 @@ const cli = meow(`
 
     $ scrs App.js > index.html
 
+  Options:
+
+    --svg   Use SVG doctype instead of HTML
+
 `, {
   flags: {
     svg: {
@@ -45,4 +49,3 @@ if (opts.svg) {
 require('update-notifier')({
   pkg: cli.pkg
 }).notify()
-

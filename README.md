@@ -46,4 +46,8 @@ const html = scrs(props => (
 ))
 ```
 
+## Options
+
+- `--svg` (boolean) use SVG doctype instead of HTML
+
 MIT License
