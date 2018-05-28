@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg class="sc-bwzfXH uTxCW" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><style data-styled-components="eDQCNf uTxCW cxVkoa">/* <![CDATA[ */ 
+/* sc-component-id: sc-keyframes-eDQCNf */
+@-webkit-keyframes eDQCNf{0%{fill:magenta;}33%{fill:cyan;}66%{fill:yellow;}100%{fill:magenta;}} @keyframes eDQCNf{0%{fill:magenta;}33%{fill:cyan;}66%{fill:yellow;}100%{fill:magenta;}}
+/* sc-component-id: sc-bdVaJa */
+.sc-bdVaJa {} .cxVkoa{-webkit-transform-origin:50% 50%;-ms-transform-origin:50% 50%;transform-origin:50% 50%;fill:magenta;-webkit-animation-name:eDQCNf;animation-name:eDQCNf;-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;}
+/* sc-component-id: sc-bwzfXH */
+.sc-bwzfXH {} /* ]]> */</style><path class="sc-bdVaJa cxVkoa" d="M16 0 L32 28 L0 28z"></path></svg>

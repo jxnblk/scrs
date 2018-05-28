@@ -5,10 +5,10 @@ const Heading = styled.h1`
   color: tomato;
 `
 
-export default props => (
+export default ({ styles, ...props }) => (
   <React.Fragment>
     <head>
-      {props.styles}
+      {styles}
     </head>
     <Heading>
       Hello

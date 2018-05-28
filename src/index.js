@@ -1,18 +1,27 @@
-import { renderToString } from 'react-dom/server'
+import React from 'react'
+import { renderToStaticMarkup } from 'react-dom/server'
 import { ServerStyleSheet } from 'styled-components'
 
-const render = Comp => {
+const render = (Comp, opts = {}) => {
   const sheet = new ServerStyleSheet()
 
-  const unstyled = renderToString(
+  const unstyled = renderToStaticMarkup(
     sheet.collectStyles(
-      Comp({})
+      React.createElement(Comp)
     )
   )
 
   const styles = sheet.getStyleElement()
-  const html = renderToString(
-    Comp({ styles })
+  if (opts.svg) {
+    styles.forEach(style => {
+      const css = style.props.dangerouslySetInnerHTML.__html
+      style.props.dangerouslySetInnerHTML.__html = `/* <![CDATA[ */ ${css} /* ]]> */`
+    })
+  }
+  const html = renderToStaticMarkup(
+    React.createElement(Comp, {
+      styles
+    })
   )
 
   return html
