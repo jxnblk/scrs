@@ -1,4 +1,6 @@
 
+<img src='examples/icon.svg' width='32' height='32' />
+
 # scrs
 
 styled-components render static
